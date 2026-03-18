@@ -1,0 +1,284 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#000;
+position:fixed;
+width:100%;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00ffff;
+}
+
+.logo{
+color:#00ffff;
+}
+
+/* Home */
+
+.home{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(120deg,#bd6060,#6798d8);
+animation:fadeIn 2s;
+}
+
+.home span{
+color:#00ffff;
+}
+
+.home button{
+padding:10px 20px;
+margin-top:15px;
+border:none;
+background:#00ffff;
+cursor:pointer;
+}
+
+/* About */
+
+.about{
+padding:80px 10%;
+text-align:center;
+}
+
+/* Skills */
+
+.skills{
+padding:80px 10%;
+}
+
+.bar{
+background:#333;
+height:10px;
+margin-bottom:20px;
+}
+
+.bar span{
+display:block;
+height:10px;
+background:#00ffff;
+animation:grow 2s;
+}
+
+/* Projects */
+
+.projects{
+padding:80px 10%;
+text-align:center;
+}
+
+.project-container{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.project-card{
+background:#222;
+padding:20px;
+width:250px;
+border-radius:10px;
+transition:0.4s;
+}
+
+.project-card:hover{
+transform:scale(1.1);
+background:#00ffff;
+color:black;
+}
+
+/* Contact */
+
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+form{
+display:flex;
+flex-direction:column;
+width:300px;
+margin:auto;
+}
+
+form input,form textarea{
+margin:10px 0;
+padding:10px;
+border:none;
+}
+
+form button{
+padding:10px;
+background:#00ffff;
+border:none;
+cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+}
+
+/* Animations */
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+@keyframes grow{
+from{width:0;}
+}
+@keyframes gradientAnimation1 {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ABOUT ME */
+.about {
+  background: linear-gradient(-45deg, #1e3a8a, #3b82f6, #9333ea, #6d28d9);
+  background-size: 400% 400%;
+  animation: gradientAnimation1 15s ease infinite;
+  color: white;
+  padding: 50px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+/* SKILLS */
+.skills {
+  background: linear-gradient(-45deg, #f59e0b, #fbbf24, #f97316, #ea580c);
+  background-size: 400% 400%;
+  animation: gradientAnimation1 15s ease infinite;
+  color: white;
+  padding: 50px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+/* PROJECTS */
+.projects {
+  background: linear-gradient(-45deg, #10b981, #06b6d4, #14b8a6, #22c55e);
+  background-size: 400% 400%;
+  animation: gradientAnimation1 15s ease infinite;
+  color: white;
+  padding: 50px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+/* CONTACT */
+.contact {
+  background: linear-gradient(-45deg, #ec4899, #f472b6, #f9a8d4, #db2777);
+  background-size: 400% 400%;
+  animation: gradientAnimation1 15s ease infinite;
+  color: white;
+  padding: 50px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+/* Optional: Headings and text styling */
+.about h2, .skills h2, .projects h2, .contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p, .skills p, .projects p, .contact p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.home{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("Demon.jpg");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+animation: zoomBg 20s infinite alternate;
+}
+
+@keyframes zoomBg{
+0%{
+background-size:100%;
+}
+100%{
+background-size:110%;
+}
+}.home{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+background: linear-gradient(
+rgba(0,0,0,0.6),
+rgba(0,0,0,0.6)
+), url("R.png");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+animation: zoomBg 20s infinite alternate;
+}
+
+@keyframes zoomBg{
+0%{
+background-size:100%;
+}
+100%{
+background-size:110%;
+}
+}
